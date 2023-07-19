@@ -1,6 +1,6 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
-const url='https://prog-verse-tot5.vercel.app';
+const url='';
 
 
 // check if connection is already established or not , if it is then it returs a callback function 
