@@ -30,7 +30,7 @@ export const getImage=async (request,response)=>{
     try {
         const file=await gfs.files.findOne({filename:request.params.filename});
         // for downloading the image,it returns a stream
-        const readStream=gridfsBucket.openDownloadStream(file._id);
+        const readStream=gridfsBucket.openDownloadStream(file?._id);
         // pass it to pipe to make it in readable format
         readStream.pipe(response);
     } catch (error) {
