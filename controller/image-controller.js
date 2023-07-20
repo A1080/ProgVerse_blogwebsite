@@ -1,6 +1,6 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
-const url='';
+const url='https://prog-verse-blogwebsite.vercel.app';
 
 
 // check if connection is already established or not , if it is then it returs a callback function 
@@ -26,6 +26,7 @@ export const uploadImage=(request,response)=>{
     // return response.status(200).json(imageUrl);
 }
 
+// this getImage is for create blog section
 export const getImage=async (request,response)=>{
     try {
         const file=await gfs.files.findOne({filename:request.params.filename});
