@@ -43,7 +43,7 @@ app.get('*', function (req, res) {
 
 console.log("hello");
 // creating express server
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT || 8000;
 // listen function takes two arguments first one is port number and second one is a callback function which is used to perform some operation just after the server start
 app.listen(PORT,()=>console.log(`Server started successfully! on port ${PORT}`));
 
