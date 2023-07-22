@@ -59,7 +59,8 @@ const DetailView=()=>{
     const {account}=useContext(DataContext);
     const navigate=useNavigate();
     const url=post.picture ? post.picture : 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80';
-
+    console.log(url);
+    console.log(post.picture);
     useEffect(()=>{
         const fetchData=async ()=>{
             let response=await API.getPostById(id);
