@@ -9,15 +9,15 @@ import { API } from '../../service/api';
 //   margin: 50px 130px;
 // `;
 
-const Container=styled(Box)(({theme})=>({
-  margin:'50px 100px',
-  [theme.breakpoints.down('md')]:{
-      margin:0
-  }
+const Container = styled(Box)(({ theme }) => ({
+  margin: '50px 125px',
+  [theme.breakpoints.down('md')]: {
+    margin: '50px 20px', 
+  },
 }));
 
 const Image = styled('img')`
-  width: 180vh;
+  width: 100%;
   height: 70vh;
   object-fit: cover;
 `;
@@ -31,6 +31,7 @@ const StyledFormControl = styled(FormControl)`
 
 const InputTextField = styled(InputBase)`
   flex: 1;
+  width: 100%;
   border: 1px solid #ccc;
   padding: 6px;
   border-radius: 4px;
